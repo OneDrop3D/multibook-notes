@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://onedrop3d.github.io/multibook-notes/sitemap.xml

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Multibook : application de notes et de cours gratuite (Mac, Windows, Linux, Android)</title>
+<meta name="description" content="Multibook réunit cahiers, documents Word et Excel, PDF annotables, maths et révisions dans une seule application gratuite, sans compte, pour Mac, Windows, Linux et Android.">
+<link rel="canonical" href="https://onedrop3d.github.io/multibook-notes/">
+<link rel="icon" href="icone.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Multibook : application de notes et de cours gratuite">
+<meta property="og:description" content="Cahiers, bureautique, maths et révisions dans une seule application. Gratuit, sans compte.">
+<meta property="og:url" content="https://onedrop3d.github.io/multibook-notes/">
+<meta property="og:image" content="https://onedrop3d.github.io/multibook-notes/capture.jpg">
+<meta property="og:locale" content="fr_FR">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Multibook","applicationCategory":"EducationalApplication","operatingSystem":"macOS, Windows, Linux, Android","description":"Application de notes et de cours : cahiers, bureautique, maths et révisions.","url":"https://onedrop3d.github.io/multibook-notes/","image":"https://onedrop3d.github.io/multibook-notes/capture.jpg","inLanguage":"fr","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"},"author":{"@type":"Organization","name":"OneDrop3D"}}
+</script>
+<style>
+:root{--fond:#fbfaf8;--carte:#fff;--encre:#232129;--doux:#5f5b68;--trait:#e6e2dc;--accent:#d2461f}
+@media (prefers-color-scheme:dark){:root{--fond:#17161b;--carte:#201f26;--encre:#f1eff4;--doux:#aaa6b3;--trait:#34323b;--accent:#f0764e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--encre);font:17px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main,header,footer{max-width:960px;margin:0 auto;padding:0 16px}
+header{padding-top:48px;text-align:center}
+header img{width:84px;height:84px}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.15;margin:14px 0 12px;letter-spacing:-.02em}
+h2{font-size:26px;margin:52px 0 14px;letter-spacing:-.01em}
+h3{font-size:18px;margin:0 0 4px}
+p{margin:0 0 12px}
+.chapeau{font-size:20px;color:var(--doux);max-width:640px;margin:0 auto 22px}
+.bouton{display:inline-block;background:var(--accent);color:#fff;font-weight:650;padding:13px 26px;border-radius:12px;text-decoration:none}
+.capture{display:block;width:100%;height:auto;margin:36px 0 0;border-radius:12px;border:1px solid var(--trait)}
+.grille{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.carte{background:var(--carte);border:1px solid var(--trait);border-radius:12px;padding:18px}
+.carte p{margin:0;color:var(--doux);font-size:16px}
+.tableau{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:var(--carte);border:1px solid var(--trait);border-radius:12px}
+th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--trait);font-size:16px}
+tr:last-child td{border-bottom:0}
+a{color:var(--accent);overflow-wrap:anywhere}
+code{background:var(--carte);border:1px solid var(--trait);border-radius:6px;padding:1px 6px;font-size:14px;overflow-wrap:anywhere}
+footer{margin-top:56px;padding-bottom:40px;color:var(--doux);font-size:15px}
+</style>
+</head>
+<body>
+<header>
+  <img src="icone.png" alt="Icône de Multibook" width="84" height="84">
+  <h1>Multibook, l’application de notes et de cours</h1>
+  <p class="chapeau">Vos cahiers, vos documents et vos révisions dans une seule application. Gratuit, sans compte, pour Mac, Windows, Linux et Android.</p>
+  <a class="bouton" href="#telecharger">Télécharger Multibook</a>
+</header>
+<main>
+  <img class="capture" src="capture.jpg" alt="Une feuille de cours ouverte dans Multibook, avec le ruban et la liste des feuilles" width="1400" height="900">
+
+  <h2>Tout ce qu’il faut pour travailler</h2>
+  <div class="grille">
+    <section class="carte"><h3>Cahiers numériques</h3><p>Des cahiers, des intercalaires et des feuilles, comme dans un classeur. Texte riche, écriture au stylet, formes, schémas et cartes mentales.</p></section>
+    <section class="carte"><h3>Maths et sciences</h3><p>Équations, courbes, géométrie, tableaux de signes et de variations, opérations posées et schémas de sciences.</p></section>
+    <section class="carte"><h3>Bureautique intégrée</h3><p>Ouvrez et modifiez les documents Word et OpenDocument, les classeurs Excel, les présentations PowerPoint, et annotez vos PDF.</p></section>
+    <section class="carte"><h3>Révisions</h3><p>Fiches, jeux de révision et jeux de frappe pour apprendre à partir de vos propres cours.</p></section>
+    <section class="carte"><h3>Voix et IA locale</h3><p>Dictée, lecture à voix haute et assistant IA qui tourne sur votre ordinateur.</p></section>
+    <section class="carte"><h3>L’école avec vous</h3><p>Reliez Pronote ou École Directe : notes, devoirs et emploi du temps arrivent dans l’application, avec l’agenda et les vacances scolaires.</p></section>
+  </div>
+
+  <h2 id="telecharger">Télécharger Multibook</h2>
+  <p id="version">Dernière version publiée. Multibook se met ensuite à jour tout seul.</p>
+  <div class="tableau"><table>
+    <thead><tr><th>Système</th><th>Fichier</th></tr></thead>
+    <tbody id="fichiers">
+      <tr><td>Mac, Windows, Linux, Android</td><td><a href="https://github.com/OneDrop3D/mises-a-jour/releases">Toutes les versions</a></td></tr>
+    </tbody>
+  </table></div>
+
+  <h2>Installer</h2>
+  <div class="grille">
+    <section class="carte"><h3>Mac</h3><p>Mac à puce Apple, macOS 11 ou plus récent. Glissez Multibook dans Applications. Multibook n’étant pas enregistré auprès d’Apple, ouvrez ensuite Réglages Système › Confidentialité et sécurité, puis choisissez Ouvrir quand même.</p></section>
+    <section class="carte"><h3>Windows</h3><p>Windows 64 bits. Lancez le fichier .exe. Si Windows affiche un avertissement, cliquez sur Informations complémentaires, puis sur Exécuter quand même.</p></section>
+    <section class="carte"><h3>Android</h3><p>Android 8 ou plus récent, appareil 64 bits. Ouvrez le fichier .apk et autorisez l’installation depuis votre navigateur.</p></section>
+    <section class="carte"><h3>Linux</h3><p>Distribution de 2024 ou plus récente (Ubuntu 24.04, Debian 13, Fedora 39). AppImage, .deb ou .rpm.</p></section>
+  </div>
+
+  <h2>Questions fréquentes</h2>
+  <h3>Multibook est-il gratuit ?</h3>
+  <p>Oui. Il n’y a ni compte à créer ni clé à saisir.</p>
+  <h3>Où sont gardées mes notes ?</h3>
+  <p>Sur votre appareil. Le détail est dans les <a href="https://github.com/OneDrop3D/mises-a-jour/blob/main/CONFIDENTIALITE.md">règles de confidentialité</a>.</p>
+  <h3>Puis-je l’utiliser dans une entreprise ?</h3>
+  <p>Non. Multibook est distribué sous la <a href="LICENSE">licence PolyForm Noncommercial 1.0.0</a> : l’usage personnel, à l’école ou dans une association est autorisé, l’usage commercial ne l’est pas.</p>
+</main>
+<footer>
+  <p>Multibook, par OneDrop3D. Contact : <a href="mailto:onedrop3d@gmail.com">onedrop3d@gmail.com</a></p>
+</footer>
+<script>
+/* Les liens suivent la dernière version publiée. Sans réseau, le lien vers toutes les versions reste. */
+const SYSTEMES = [['macos-arm64', 'Mac (puce Apple)'], ['windows-x64', 'Windows 64 bits'], ['android-arm64', 'Android'],
+  ['linux-x64-appimage', 'Linux (AppImage)'], ['linux-x64-deb', 'Linux (.deb : Ubuntu, Debian)'], ['linux-x64-rpm', 'Linux (.rpm : Fedora)']];
+fetch('https://raw.githubusercontent.com/OneDrop3D/mises-a-jour/main/multibook.json').then((r) => r.json()).then((m) => {
+  const corps = document.getElementById('fichiers');
+  corps.textContent = '';
+  for (const [cle, nom] of SYSTEMES) {
+    const f = m.files[cle];
+    if (!f) continue;
+    const tr = corps.insertRow(), a = document.createElement('a');
+    tr.insertCell().textContent = nom;
+    a.href = f.url; a.textContent = f.name + ' (' + Math.round(f.size / 1e6) + ' Mo)';
+    tr.insertCell().appendChild(a);
+  }
+  document.getElementById('version').textContent = 'Version ' + m.version + '. Multibook se met ensuite à jour tout seul.';
+}).catch(() => {});
+</script>
+</body>
+</html>
