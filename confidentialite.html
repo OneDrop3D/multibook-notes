@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Règles de confidentialité de Multibook</title>
+<meta name="description" content="Quelles données Multibook utilise, où elles sont gardées, et comment fonctionne la connexion à Google Agenda.">
+<link rel="canonical" href="https://onedrop3d.github.io/multibook-notes/confidentialite.html">
+<link rel="icon" href="icone.png">
+<style>
+:root{--fond:#fbfaf8;--carte:#fff;--encre:#232129;--doux:#5f5b68;--trait:#e6e2dc;--accent:#d2461f}
+@media (prefers-color-scheme:dark){:root{--fond:#17161b;--carte:#201f26;--encre:#f1eff4;--doux:#aaa6b3;--trait:#34323b;--accent:#f0764e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--fond);color:var(--encre);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main,header,footer{max-width:760px;margin:0 auto;padding:0 16px}
+header{padding-top:40px}
+header a{display:inline-flex;align-items:center;gap:10px;color:var(--encre);text-decoration:none;font-weight:650}
+header img{width:40px;height:40px}
+h1{font-size:clamp(28px,5vw,38px);line-height:1.2;margin:28px 0 6px;letter-spacing:-.02em}
+h2{font-size:22px;margin:40px 0 10px;letter-spacing:-.01em}
+p,li{margin:0 0 10px}
+ul{padding-left:22px}
+.date{color:var(--doux);margin-bottom:24px}
+.encadre{background:var(--carte);border:1px solid var(--trait);border-radius:12px;padding:16px 18px;margin:14px 0}
+a{color:var(--accent);overflow-wrap:anywhere}
+code{background:var(--carte);border:1px solid var(--trait);border-radius:6px;padding:1px 6px;font-size:14px;overflow-wrap:anywhere}
+footer{margin-top:56px;padding-bottom:40px;color:var(--doux);font-size:15px}
+</style>
+</head>
+<body>
+<header><a href="./"><img src="icone.png" alt="" width="40" height="40">Multibook</a></header>
+<main>
+  <h1>Règles de confidentialité de Multibook</h1>
+  <p class="date">Dernière mise à jour : 10 novembre 2026</p>
+
+  <p>Multibook est une application de notes et de cours éditée par OneDrop3D. Cette page explique quelles données
+  l’application utilise, où elles sont gardées et comment les supprimer. En bref : <strong>vos données restent sur
+  votre appareil</strong>, et OneDrop3D n’y a jamais accès.</p>
+
+  <h2>Vos cahiers et vos documents</h2>
+  <p>Vos cahiers, feuilles, documents, agendas et réglages sont enregistrés <strong>sur votre appareil
+  uniquement</strong>. Multibook n’a pas de compte utilisateur et n’envoie rien à OneDrop3D. L’assistant IA,
+  la dictée et la lecture à voix haute fonctionnent sur votre appareil.</p>
+
+  <h2>Les services que vous choisissez de relier</h2>
+  <p>Multibook ne se connecte à un service extérieur que si vous le demandez. Dans ce cas, il communique
+  <strong>directement</strong> avec ce service, depuis votre appareil, sans passer par OneDrop3D :</p>
+  <ul>
+    <li><strong>Google Agenda</strong> : voir la partie suivante.</li>
+    <li><strong>Apple iCloud et autres agendas CalDAV</strong> : pour synchroniser votre agenda. Le mot de passe
+    pour application que vous donnez est rangé chiffré sur votre appareil.</li>
+    <li><strong>Pronote, École Directe et l’espace cantine</strong> : pour afficher vos notes, devoirs, emploi du
+    temps et repas. Les accès sont rangés chiffrés sur votre appareil.</li>
+    <li><strong>Liens d’agenda (iCal)</strong> que vous ajoutez : Multibook les lit pour afficher leurs événements.</li>
+    <li><strong>IA en ligne</strong> (Claude, ChatGPT, Mistral, Gemini) : Multibook prépare un texte que
+    <em>vous</em> envoyez vous-même au service de votre choix. Ce texte contient le cours choisi ; il est alors
+    traité par ce service selon ses propres règles.</li>
+  </ul>
+
+  <h2 id="google">Google Agenda</h2>
+  <p>Si vous cliquez sur « Se connecter avec Google » dans Multibook (Paramètres › Outils › Agenda), Google vous
+  demande d’autoriser Multibook à accéder à :</p>
+  <ul>
+    <li><strong>vos agendas Google</strong> (<code>https://www.googleapis.com/auth/calendar</code>) : pour afficher
+    vos événements Google dans l’agenda de Multibook, et pour y ajouter, modifier ou supprimer les événements que
+    vous créez ou changez dans Multibook ;</li>
+    <li><strong>votre adresse e-mail Google</strong> (<code>openid</code>,
+    <code>https://www.googleapis.com/auth/userinfo.email</code>) : pour savoir quel compte est relié, l’afficher
+    dans les réglages et trouver vos agendas.</li>
+  </ul>
+  <p>Ce que Multibook fait de ces données :</p>
+  <ul>
+    <li>Les événements sont copiés <strong>sur votre appareil</strong>, pour s’afficher même sans connexion.</li>
+    <li>L’autorisation donnée par Google (jetons d’accès) est rangée <strong>chiffrée sur votre appareil</strong>.
+    Votre mot de passe Google ne passe jamais par Multibook.</li>
+    <li>Rien n’est envoyé à OneDrop3D ni à personne d’autre. Les données ne sont ni vendues, ni utilisées pour de la
+    publicité, ni pour entraîner un modèle d’intelligence artificielle, et aucune personne n’y a accès.</li>
+    <li>Multibook n’utilise ces données que pour synchroniser votre agenda, à votre demande.</li>
+  </ul>
+  <div class="encadre">
+    <p>L’utilisation et le transfert, par Multibook, des informations reçues des API Google respectent la
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Règle relative aux données des
+    utilisateurs des services d’API Google</a>, y compris les exigences d’utilisation limitée (<em>Limited Use</em>).</p>
+    <p lang="en">Multibook’s use and transfer to any other app of information received from Google APIs will adhere
+    to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data
+    Policy</a>, including the Limited Use requirements.</p>
+  </div>
+  <p><strong>Retirer l’accès.</strong> Dans Multibook, « Déconnecter » le compte Google rend l’accès à Google et efface
+  de votre appareil les jetons et les événements copiés. Vous pouvez aussi retirer l’accès à tout moment depuis votre
+  compte Google : <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>Mises à jour</h2>
+  <p>Multibook vérifie l’existence d’une nouvelle version en lisant un fichier public sur GitHub. Aucune donnée
+  personnelle n’est envoyée lors de cette vérification.</p>
+
+  <h2>Enfants et élèves</h2>
+  <p>Multibook est pensé pour les élèves. Comme rien n’est collecté par OneDrop3D, aucune donnée d’élève n’est
+  conservée par nous. Un compte Google d’établissement peut être soumis aux règles fixées par l’établissement.</p>
+
+  <h2>Supprimer vos données</h2>
+  <p>Toutes vos données étant sur votre appareil, il suffit de supprimer Multibook et son dossier de données pour les
+  effacer. Pour les services reliés, déconnectez-les d’abord dans les réglages de Multibook.</p>
+
+  <h2>Contact</h2>
+  <p>Pour toute question : <a href="mailto:onedrop3d@gmail.com">onedrop3d@gmail.com</a>. Les règles générales de
+  OneDrop3D (licences, e-mails) sont <a href="https://github.com/OneDrop3D/mises-a-jour/blob/main/CONFIDENTIALITE.md">ici</a>.</p>
+</main>
+<footer>
+  <p>Multibook, par OneDrop3D · <a href="./">Accueil</a> · <a href="conditions.html">Conditions d’utilisation</a></p>
+</footer>
+</body>
+</html>
